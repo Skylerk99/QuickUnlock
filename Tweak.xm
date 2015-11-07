@@ -20,7 +20,7 @@
 static NSString* originalPasscode;
 
 %hook SBLockScreenViewController
--(void)_handleDisplayTurnedOn:(id)arg1 {
+-(void) _handleDisplayTurnedOnWhileUILocked:(id)arg1 {
 	%log;
 
 	//check if there are pending notifications
